@@ -23,13 +23,13 @@ def create_real_pyramid(real, min_size, max_size, scale_factor_init):
 
     num_scales = int(
         np.ceil(
-            np.log(
+            np.math.log(
                 np.power(min_size / min(real.shape[0], real.shape[1]), 1),
                 scale_factor_init))) + 1
 
     scale2stop = int(
         np.ceil(
-            np.log(
+            np.math.log(
                 min([max_size, max([real.shape[0], real.shape[1]])]) /
                 max([real.shape[0], real.shape[1]]), scale_factor_init)))
 
@@ -43,7 +43,7 @@ def create_real_pyramid(real, min_size, max_size, scale_factor_init):
 
     scale2stop = int(
         np.ceil(
-            np.log(
+            np.math.log(
                 min([max_size, max([real.shape[0], real.shape[1]])]) /
                 max([real.shape[0], real.shape[1]]), scale_factor_init)))
     stop_scale = num_scales - scale2stop
