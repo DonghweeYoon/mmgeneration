@@ -39,7 +39,7 @@ def parse_args():
     parser.add_argument(
         '--num-samples',
         type=int,
-        default=10,
+        default=50,
         help='the number of synthesized samples')
     args = parser.parse_args()
     return args
