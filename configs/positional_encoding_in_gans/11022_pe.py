@@ -16,7 +16,7 @@ train_cfg = dict(first_fixed_noises_ch=2)
 
 data = dict(
     train=dict(
-        img_path='/home/uhrgan/pe/mmgeneration/SCENERY_432/11022_phase_3_w_432.jpg',
+        img_path='/home/uhrgan/SCENERY_432/11022_phase_3_w_432.jpg',
         min_size=25,
         max_size=432,
     ))
