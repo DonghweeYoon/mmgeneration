@@ -10,7 +10,7 @@ model = dict(
 
 train_cfg = dict(
     noise_weight_init=0.1,
-    iters_per_scale=10,
+    iters_per_scale=2000,
 )
 
 #test_cfg = dict(
