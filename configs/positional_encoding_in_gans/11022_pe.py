@@ -1,6 +1,6 @@
 _base_ = ['../singan/11022.py']
 
-num_scales = 11  # start from zero
+num_scales = 10  # start from zero
 model = dict(
     type='PESinGAN',
     generator=dict(
@@ -22,4 +22,4 @@ data = dict(
     ))
 
 dist_params = dict(backend='nccl')
-total_iters = 24000
+total_iters = 22000
